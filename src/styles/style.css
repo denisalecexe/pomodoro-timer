@@ -1,0 +1,26 @@
+/* VARIABILI CSS */
+:root {
+    --bg-body: #aaffc7;
+    --bg-timer: #67c090;
+    --text-timer: #3f3e3f;
+    --button-play: #34ef23;
+    --button-pause: #cb2957;
+    --button-reset: #8d30f8;
+    --button-plus: #124170;
+    --button-minus: #215b63;
+
+}
+
+/* TAG ELEMENT */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* ID */
+
+
+/* CLASS */
