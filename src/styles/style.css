@@ -2,7 +2,7 @@
 :root {
     --bg-body: #aaffc7;
     --bg-timer: #67c090;
-    --text-timer: #3f3e3f;
+    --text-timer: #983f6f;
     --text-button: #d4d4d4;
     --button-play: #34ef23;
     --button-pause: #cb2957;
@@ -25,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--bg-body);
+    color: var(--text-timer);
 }
 
 /* stile dei bottoni */
@@ -61,12 +62,14 @@ button {
     flex-direction: row;
     gap: 5px;
     margin: 10px;
+    cursor: pointer;
 }
 
 /* stile del testo tra i bottoni */
 .set-number {
     flex: 1;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 /* stile dei bottoni plus e minus */
