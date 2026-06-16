@@ -53,6 +53,10 @@ button {
     font-weight: bold;
 }
 
+/* input style */
+#input-hidden-number {
+    display: none;
+}
 
 /* stile dei bottoni di play, pause e reset */
 #main-buttons {
