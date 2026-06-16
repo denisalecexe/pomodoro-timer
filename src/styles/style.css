@@ -18,9 +18,35 @@ body {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* stile dei bottoni */
+button {
+    border: none;
+    outline: none;
 }
 
 /* ID */
-
+/* stile del container */
+#container {
+    display: grid;
+    place-items: center;
+    gap: 5px;
+}
 
 /* CLASS */
+/* stile dei container delle impostazioni di modifica del timer */
+.set-pomodoro,
+.set-short-pause,
+.set-long-pause {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.set-number {
+    flex: 1;
+}
