@@ -8,10 +8,7 @@
     --button-pause: #cb2957;
     --button-reset: #8d30f8;
     --button-plus: #124170;
-    --text-plus: #edbe8f;
     --button-minus: #215b63;
-    --text-minus: #dea49c;
-
 }
 
 /* TAG ELEMENT */
@@ -51,6 +48,7 @@ button {
 #timer {
     font-size: 3.5rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* input style */
@@ -101,7 +99,7 @@ button {
 /* stile del testo tra i bottoni */
 .set-number {
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -110,25 +108,18 @@ button {
 .minus {
     width: 50px;
     border-radius: 15px;
-}
-
-.plus {
-    background: var(--button-plus);
-}
-
-.minus {
-    background: var(--button-minus);
+    background: none;
 }
 
 .plus i,
 .minus i {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 .plus i {
-    color: var(--text-plus);
+    color: var(--button-plus);
 }
 
 .minus i {
-    color: var(--text-minus);
+    color: var(--button-minus);
 }
