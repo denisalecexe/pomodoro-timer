@@ -3,11 +3,14 @@
     --bg-body: #aaffc7;
     --bg-timer: #67c090;
     --text-timer: #3f3e3f;
+    --text-button: #d4d4d4;
     --button-play: #34ef23;
     --button-pause: #cb2957;
     --button-reset: #8d30f8;
     --button-plus: #124170;
+    --text-plus: #edbe8f;
     --button-minus: #215b63;
+    --text-minus: #dea49c;
 
 }
 
@@ -21,20 +24,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--bg-body);
 }
 
 /* stile dei bottoni */
 button {
     border: none;
     outline: none;
+    padding: 5px;
 }
 
 /* ID */
+/* stile dei numeri visibili del timer che si dovrà muovere */
+#timer {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-timer);
+}
+
 /* stile del container */
 #container {
     display: grid;
     place-items: center;
-    gap: 5px;
+    gap: 15px;
+    background: var(--bg-timer);
+    padding: 20px;
+    border-radius: 15px;
 }
 
 /* CLASS */
@@ -45,8 +60,39 @@ button {
     display: flex;
     flex-direction: row;
     gap: 5px;
+    margin: 10px;
 }
 
+/* stile del testo tra i bottoni */
 .set-number {
     flex: 1;
+    font-size: 1.5rem;
+}
+
+/* stile dei bottoni plus e minus */
+.plus,
+.minus {
+    width: 50px;
+    border-radius: 15px;
+}
+
+.plus {
+    background: var(--button-plus);
+}
+
+.minus {
+    background: var(--button-minus);
+}
+
+.plus i,
+.minus i {
+    font-size: 1.3rem;
+}
+
+.plus i {
+    color: var(--text-plus);
+}
+
+.minus i {
+    color: var(--text-minus);
 }
