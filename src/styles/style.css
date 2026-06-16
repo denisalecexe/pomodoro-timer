@@ -3,8 +3,8 @@
     --bg-body: #aaffc7;
     --bg-timer: #67c090;
     --text-timer: #983f6f;
-    --text-button: #d4d4d4;
-    --button-play: #34ef23;
+    --text-main-button: #1e1e24;
+    --button-start: #34ef23;
     --button-pause: #cb2957;
     --button-reset: #8d30f8;
     --button-plus: #124170;
@@ -36,21 +36,50 @@ button {
 }
 
 /* ID */
-/* stile dei numeri visibili del timer che si dovrà muovere */
-#timer {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: var(--text-timer);
-}
-
 /* stile del container */
 #container {
+    width: 400px;
     display: grid;
     place-items: center;
     gap: 15px;
     background: var(--bg-timer);
     padding: 20px;
     border-radius: 15px;
+}
+
+/* stile dei numeri visibili del timer che si dovrà muovere */
+#timer {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+/* stile dei bottoni di play, pause e reset */
+#main-buttons {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main-buttons button {
+    flex: 1;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--text-main-button);
+}
+
+#start {
+    background: var(--button-start);
+}
+
+#pause {
+    background: var(--button-pause);
+}
+
+#reset {
+    background: var(--button-reset);
 }
 
 /* CLASS */
