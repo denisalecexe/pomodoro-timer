@@ -52,7 +52,7 @@ button {
 }
 
 /* input style */
-#input-hidden-number {
+#inputHiddenNumber {
     display: none;
 }
 
@@ -97,7 +97,7 @@ button {
 }
 
 /* stile del testo tra i bottoni */
-.set-number {
+.setNumber {
     flex: 1;
     font-size: 2rem;
     font-weight: 500;
